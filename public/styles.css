@@ -1,0 +1,168 @@
+/* Main Things */
+body {
+	background: #32026D;
+	color: #D9FFDC;
+}
+#wrapper {
+	max-width: 50em; 
+	margin-left: auto; margin-right: auto; 
+	border-radius: .5em; 
+	border: 0.3125em #5228A8 dashed;
+	padding: 0.3125em 0.125em 0em 0.125em;
+	clear: both;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: sans-serif;
+	text-align: center;
+	clear:both;
+}
+h1{
+	font-size: 3.75em;
+	font-family: serif;
+}
+p,dl {
+	padding: 0em 0.3125em;
+	font-family: sans-serif;
+}
+
+ul{
+	font-family:sans-serif;
+}
+
+button{
+	margin-left:0.3125em; 
+	margin-bottom:0.625em;
+}
+
+/*Links <a> and definition list stuff <dt> <dd>*/
+a{
+	border: 0.1875em #5228A8 solid;
+	padding: 0.0625em 0.125em;
+	margin: 0em 0.45em;
+	font-family: sans-serif;
+	line-height: 170%;
+}
+a:link {color:#3FFF52;}
+a:visited {color:#D2ADFF;}
+a:hover {color: #ffffff;}
+dt{font-weight: bold;}
+dd{margin-bottom: 1.25em;}
+
+/*Classes*/
+.normal{
+	border: 0em;
+	padding: 0em;
+	margin: 0em 0em;
+	line-height: 0em;
+}
+.right{float:right; margin-left: 0.625em; margin-bottom: 0.625em;}
+.left{float:left; margin-right: 0.625em; margin-bottom: 0.625em;}
+.clear{clear:both;}
+.center{
+	text-align:center;
+	font-size: 1.25em;
+}
+
+/*IDs*/
+#rainbow{
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+	background-clip: text;
+	background: linear-gradient(90deg, #ff8686, orange, yellow, #75ff73, #73ccff, #B77BFF);
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+	color: rgba(0,0,0,0);
+}
+#sticky{
+	position: sticky;
+	top: 0;
+	background: #32026D;
+	padding: 0.625em 0em;
+	z-index: 1;
+}
+#columns{
+	column-count: 2;
+	column-gap: 0em;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 0em;
+  z-index:0;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 41%;
+  width: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: .5em;
+  color: grey;
+  font-weight: bold;
+  font-size: 1.3em;
+  font-family: serif;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through 
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+*/
+/* Caption text */
+.text {
+  color: #D9FFDC;
+  font-family: sans-serif;
+  width: 100%;
+  text-align: center;
+}
+
+/* Media Queries */
+
+/* devices smaller than 700px*/
+@media only screen and (max-width: 700px) {
+  #wrapper {width:100%;}
+  img{width:100%; height:auto; text-align: center;}
+  .slideshow-container{width:100%; height:auto; align:center; font-size: 3.5em; margin:0em;}
+  h1{font-size: 6em;}
+  h2{font-size: 4.5em;}
+  a{margin: 0em 0.01em; font-size: 3.5em;}
+  p, button, dl{font-size: 3.5em;}
+  .normal{font-size: 1em;}
+  input, textarea{font-size: .7em;}
+}
+
+/* devices bigger than 700px but smaller than 1000px*/
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  #wrapper {max-width:99%;}
+  img{width:100%; height:auto; text-align:center;}
+  .slideshow-container{width:100%; height:auto; align:center; font-size: 2.5em; margin:0em;}
+  h1{font-size: 5em;}
+  h2{font-size: 3.5em;}
+  a{margin: 0em .1em; font-size: 2.5em;}
+  p, button, dl{font-size: 2.5em;}
+  .normal{font-size: 1em;}
+  input, textarea{font-size: .7em;}
+}
